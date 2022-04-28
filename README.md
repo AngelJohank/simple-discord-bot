@@ -1,6 +1,7 @@
 # simple-discord-bot
 
 create a bot.json file like this
+```
 
 {
 	"clientId": "",
@@ -8,3 +9,5 @@ create a bot.json file like this
 	"token": "",
 	"prefix": "*"
 }
+
+```
