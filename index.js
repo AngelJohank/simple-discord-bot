@@ -56,6 +56,5 @@ eventFiles.forEach((file) => {
 	}
 })
 
-
 // Login
 client.login(token)
