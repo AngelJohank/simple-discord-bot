@@ -11,7 +11,7 @@ const client = new Client({
 	],
 })
 
-// Commands Settup
+// Commands Setup
 client.commands = new Collection()
 
 const commandFiles = fs
@@ -42,7 +42,7 @@ client.on('interactionCreate', async (interaction) => {
 	}
 })
 
-// Events
+// Events setup
 const eventFiles = fs
 	.readdirSync('./src/events')
 	.filter((file) => file.endsWith('.js'))
