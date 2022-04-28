@@ -1,13 +1,11 @@
 # simple-discord-bot
 
-create a bot.json file like this
+create a "bot.json" file like this
 ```json
-
 {
-	"clientId": "",
-	"guildId": "",
-	"token": "",
-	"prefix": "*"
+  "clientId": "",
+  "guildId": "",
+  "token": "",
+  "prefix": "*"
 }
-
 ```
