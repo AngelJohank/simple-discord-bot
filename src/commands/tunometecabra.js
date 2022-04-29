@@ -15,7 +15,7 @@ const getGif = async () => {
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('tunometecabra')
-		.setDescription('te dice saramambiche'),
+		.setDescription('te envía un gif saramambiche 😳'),
 	async execute(interaction) {
 		const url = await getGif()
 		await interaction.reply(url)
