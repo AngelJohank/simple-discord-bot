@@ -3,7 +3,7 @@ module.exports = {
 	once: false,
 	async execute(msg) {
 		if (msg.content.toLowerCase().startsWith('-doxme')) {
-			await msg.reply(JSON.stringify(msg.author, '', 2))
+			await msg.reply("```json\n" + JSON.stringify(msg.author, '', 2) + "```")
 		}
 	}
 }
