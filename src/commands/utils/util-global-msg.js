@@ -37,8 +37,10 @@ const saveglobalmsg = async (interaction, input) => {
 	if (cacheExists) {
 		const model = JSON.stringify({ content: input, time: Date.now() })
 		fs.writeFile(fileDir, model, async (e) => {
-			if (e) console.error(e)
-			await interaction.reply('mensaje guardado :>')
+			await interaction.reply({
+				content: 'Mensaje guardado :>',
+				ephemeral: true,
+			})
 		})
 	}
 }
