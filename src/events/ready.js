@@ -3,5 +3,5 @@ module.exports = {
 	once: true,
 	execute(client) {
 		console.log('Logged as:', client.user.tag)
-	}
+	},
 }
