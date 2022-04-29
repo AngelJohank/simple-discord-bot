@@ -24,9 +24,9 @@ rest
 	.then(() => console.log('Successfully registered application commands.'))
 	.catch(console.error)
 
-rest
-	.put(Routes.applicationCommands(clientId), { body: commands })
-	.then(() =>
-		console.log('Successfully registered global application commands.')
-	)
-	.catch(console.error)
+// rest
+// 	.put(Routes.applicationCommands(clientId), { body: commands })
+// 	.then(() =>
+// 		console.log('Successfully registered global application commands.')
+// 	)
+// 	.catch(console.error)
