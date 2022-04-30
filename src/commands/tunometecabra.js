@@ -9,7 +9,7 @@ const getGif = async () => {
 	const response = await fetch(endpoint)
 	const data = await response.json()
 
-	return data.results[index].media[0].tinygif.url
+	return data.results[index].itemurl
 }
 
 module.exports = {
