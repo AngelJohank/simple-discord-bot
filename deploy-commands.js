@@ -1,6 +1,8 @@
+require('dotenv').config()
+
 const { REST } = require('@discordjs/rest')
 const { Routes } = require('discord-api-types/v9')
-const { CLIENT_ID, GUILD_ID, TOKEN } = require('./bot.json')
+const { CLIENT_ID, GUILD_ID, TOKEN } = process.env
 
 const fs = require('fs')
 
