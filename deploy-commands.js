@@ -1,6 +1,6 @@
 const { REST } = require('@discordjs/rest')
 const { Routes } = require('discord-api-types/v9')
-const { clientId, guildId, token } = require('./bot.json')
+const { CLIENT_ID, GUILD_ID, TOKEN } = require('./bot.json')
 
 const fs = require('fs')
 
@@ -17,15 +17,15 @@ commandFiles.forEach((file) => {
 })
 
 // Publish commands
-const rest = new REST({ version: '9' }).setToken(token)
+const rest = new REST({ version: '9' }).setToken(TOKEN)
 
 rest
-	.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
+	.put(Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID), { body: commands })
 	.then(() => console.log('Successfully registered application commands.'))
 	.catch(console.error)
 
 // rest
-// 	.put(Routes.applicationCommands(clientId), { body: commands })
+// 	.put(Routes.applicationCommands(CLIENT_ID), { body: commands })
 // 	.then(() =>
 // 		console.log('Successfully registered global application commands.')
 // 	)

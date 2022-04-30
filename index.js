@@ -1,5 +1,8 @@
+require('dotenv').config()
+
+
 const { Client, Collection, Intents } = require('discord.js')
-const { token, prefix } = require('./bot.json')
+const { TOKEN } = process.env
 const fs = require('fs')
 
 // Client
@@ -53,4 +56,4 @@ eventFiles.forEach((file) => {
 })
 
 // Login
-client.login(token)
+client.login(TOKEN)
