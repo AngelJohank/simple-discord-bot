@@ -9,7 +9,7 @@ module.exports = {
 			return
 		}
 
-		if (/\b([rR]{1,5}[aA]{1,20})\b$/m.test(msg.content)) {
+		if (/\b(r{1,5}a{1,20})\b/i.test(msg.content)) {
 			await msg.reply('RAAAAAAAAAAAAAAAA 😎👍')
 			return
 		}
