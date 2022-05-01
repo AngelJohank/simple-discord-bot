@@ -4,6 +4,6 @@ module.exports = {
 	async execute(msg) {
 		if (msg.author.bot || !/\b(bcp)\b/i.test(msg.content)) return
 
-		await msg.reply('escuché bcp B)?')
+		await msg.channel.send('escuché bcp B)?')
 	},
 }
