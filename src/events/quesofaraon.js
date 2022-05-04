@@ -5,7 +5,7 @@ module.exports = {
 		if (msg.author.bot) return
 
 		if (/\b(que|q|k|ke|qe)\b$/m.test(msg.content)) {
-			await msg.reply('so :)')
+			await msg.reply('ricas sobadotas me das <:lipbite:928741545685962853>')
 			return
 		}
 
