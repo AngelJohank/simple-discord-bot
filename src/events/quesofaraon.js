@@ -3,13 +3,19 @@ module.exports = {
 	once: false,
 	async execute(msg) {
 		if (msg.author.bot) return
-
-		if (/\b(k|ke|q|qe|que|que)\b$/i.test(msg.content)) {
+		
+		// Detect "que"
+		const queReg = /\b(k|ke|q|qe|que|que)\b$/i
+		
+		if (queReg.test(msg.content)) {
 			await msg.reply('ricas sobadotas me das <:lipbite:928741545685962853>')
 			return
 		}
 
-		if (/\b(r{1,5}a{1,20})\b/i.test(msg.content)) {
+		// Detect "ra"
+		const raReg = /\b(r{1,10}a{1,50})\b/i
+
+		if (raReg.test(msg.content)) {
 			await msg.reply('RAAAAAAAAAAAAAAAA 😎👍')
 			return
 		}
